@@ -45,19 +45,19 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnVerif1 = new System.Windows.Forms.Button();
             this.lblResC = new System.Windows.Forms.Label();
-            this.txtCS2 = new System.Windows.Forms.Label();
+            this.lblax = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCS2 = new System.Windows.Forms.TextBox();
             this.txtCS1 = new System.Windows.Forms.TextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.lblAbuela = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAbuela = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtSumando2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtSumando1 = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -181,10 +181,11 @@
             // 
             // rich2
             // 
-            this.rich2.Location = new System.Drawing.Point(320, 55);
+            this.rich2.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rich2.Location = new System.Drawing.Point(296, 55);
             this.rich2.Name = "rich2";
             this.rich2.ReadOnly = true;
-            this.rich2.Size = new System.Drawing.Size(217, 107);
+            this.rich2.Size = new System.Drawing.Size(282, 107);
             this.rich2.TabIndex = 2;
             this.rich2.Text = "";
             // 
@@ -209,9 +210,9 @@
             // 
             this.tabPage3.Controls.Add(this.btnVerif1);
             this.tabPage3.Controls.Add(this.lblResC);
-            this.tabPage3.Controls.Add(this.txtCS2);
+            this.tabPage3.Controls.Add(this.lblax);
             this.tabPage3.Controls.Add(this.label7);
-            this.tabPage3.Controls.Add(this.textBox3);
+            this.tabPage3.Controls.Add(this.txtCS2);
             this.tabPage3.Controls.Add(this.txtCS1);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Name = "tabPage3";
@@ -230,24 +231,25 @@
             this.btnVerif1.TabIndex = 11;
             this.btnVerif1.Text = "Verificar";
             this.btnVerif1.UseVisualStyleBackColor = true;
+            this.btnVerif1.Click += new System.EventHandler(this.btnVerif1_Click);
             // 
             // lblResC
             // 
             this.lblResC.AutoSize = true;
-            this.lblResC.Location = new System.Drawing.Point(298, 190);
+            this.lblResC.Location = new System.Drawing.Point(144, 186);
             this.lblResC.Name = "lblResC";
             this.lblResC.Size = new System.Drawing.Size(68, 15);
             this.lblResC.TabIndex = 10;
             this.lblResC.Text = "Resultado : ";
             // 
-            // txtCS2
+            // lblax
             // 
-            this.txtCS2.AutoSize = true;
-            this.txtCS2.Location = new System.Drawing.Point(276, 65);
-            this.txtCS2.Name = "txtCS2";
-            this.txtCS2.Size = new System.Drawing.Size(56, 15);
-            this.txtCS2.TabIndex = 9;
-            this.txtCS2.Text = "Cadena 2";
+            this.lblax.AutoSize = true;
+            this.lblax.Location = new System.Drawing.Point(276, 65);
+            this.lblax.Name = "lblax";
+            this.lblax.Size = new System.Drawing.Size(56, 15);
+            this.lblax.TabIndex = 9;
+            this.lblax.Text = "Cadena 2";
             // 
             // label7
             // 
@@ -258,12 +260,12 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Cadena 1";
             // 
-            // textBox3
+            // txtCS2
             // 
-            this.textBox3.Location = new System.Drawing.Point(245, 96);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 7;
+            this.txtCS2.Location = new System.Drawing.Point(245, 96);
+            this.txtCS2.Name = "txtCS2";
+            this.txtCS2.Size = new System.Drawing.Size(100, 23);
+            this.txtCS2.TabIndex = 7;
             // 
             // txtCS1
             // 
@@ -275,13 +277,13 @@
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.lblAbuela);
-            this.tabPage4.Controls.Add(this.button1);
+            this.tabPage4.Controls.Add(this.btnAbuela);
             this.tabPage4.Controls.Add(this.label8);
-            this.tabPage4.Controls.Add(this.textBox6);
+            this.tabPage4.Controls.Add(this.txtSumando2);
             this.tabPage4.Controls.Add(this.label5);
             this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Controls.Add(this.textBox4);
-            this.tabPage4.Controls.Add(this.textBox5);
+            this.tabPage4.Controls.Add(this.txtSumando1);
+            this.tabPage4.Controls.Add(this.txtTotal);
             this.tabPage4.Location = new System.Drawing.Point(4, 24);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
@@ -293,20 +295,21 @@
             // lblAbuela
             // 
             this.lblAbuela.AutoSize = true;
-            this.lblAbuela.Location = new System.Drawing.Point(240, 151);
+            this.lblAbuela.Location = new System.Drawing.Point(215, 151);
             this.lblAbuela.Name = "lblAbuela";
             this.lblAbuela.Size = new System.Drawing.Size(59, 15);
             this.lblAbuela.TabIndex = 17;
             this.lblAbuela.Text = "Resultado";
             // 
-            // button1
+            // btnAbuela
             // 
-            this.button1.Location = new System.Drawing.Point(226, 111);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Ejecutar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAbuela.Location = new System.Drawing.Point(226, 111);
+            this.btnAbuela.Name = "btnAbuela";
+            this.btnAbuela.Size = new System.Drawing.Size(87, 23);
+            this.btnAbuela.TabIndex = 16;
+            this.btnAbuela.Text = "Ejecutar";
+            this.btnAbuela.UseVisualStyleBackColor = true;
+            this.btnAbuela.Click += new System.EventHandler(this.btnAbuela_Click);
             // 
             // label8
             // 
@@ -317,12 +320,12 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Sumando 2 (binario)";
             // 
-            // textBox6
+            // txtSumando2
             // 
-            this.textBox6.Location = new System.Drawing.Point(57, 197);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(54, 23);
-            this.textBox6.TabIndex = 14;
+            this.txtSumando2.Location = new System.Drawing.Point(57, 197);
+            this.txtSumando2.Name = "txtSumando2";
+            this.txtSumando2.Size = new System.Drawing.Size(54, 23);
+            this.txtSumando2.TabIndex = 14;
             // 
             // label5
             // 
@@ -342,19 +345,19 @@
             this.label6.TabIndex = 12;
             this.label6.Text = "Total";
             // 
-            // textBox4
+            // txtSumando1
             // 
-            this.textBox4.Location = new System.Drawing.Point(57, 125);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(54, 23);
-            this.textBox4.TabIndex = 11;
+            this.txtSumando1.Location = new System.Drawing.Point(57, 125);
+            this.txtSumando1.Name = "txtSumando1";
+            this.txtSumando1.Size = new System.Drawing.Size(54, 23);
+            this.txtSumando1.TabIndex = 11;
             // 
-            // textBox5
+            // txtTotal
             // 
-            this.textBox5.Location = new System.Drawing.Point(55, 52);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(56, 23);
-            this.textBox5.TabIndex = 10;
+            this.txtTotal.Location = new System.Drawing.Point(55, 52);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(56, 23);
+            this.txtTotal.TabIndex = 10;
             // 
             // Form1
             // 
@@ -397,18 +400,18 @@
         private TabPage tabPage3;
         private Button btnVerif1;
         private Label lblResC;
-        private Label txtCS2;
+        private Label lblax;
         private Label label7;
-        private TextBox textBox3;
+        private TextBox txtCS2;
         private TextBox txtCS1;
         private TabPage tabPage4;
         private Label lblAbuela;
-        private Button button1;
+        private Button btnAbuela;
         private Label label8;
-        private TextBox textBox6;
+        private TextBox txtSumando2;
         private Label label5;
         private Label label6;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox txtSumando1;
+        private TextBox txtTotal;
     }
 }
