@@ -112,6 +112,7 @@
             this.lblResult1.Size = new System.Drawing.Size(68, 15);
             this.lblResult1.TabIndex = 4;
             this.lblResult1.Text = "Resultado : ";
+            this.lblResult1.Visible = false;
             // 
             // label2
             // 
@@ -241,6 +242,7 @@
             this.lblResC.Size = new System.Drawing.Size(68, 15);
             this.lblResC.TabIndex = 10;
             this.lblResC.Text = "Resultado : ";
+            this.lblResC.Visible = false;
             // 
             // lblax
             // 
@@ -300,6 +302,7 @@
             this.lblAbuela.Size = new System.Drawing.Size(59, 15);
             this.lblAbuela.TabIndex = 17;
             this.lblAbuela.Text = "Resultado";
+            this.lblAbuela.Visible = false;
             // 
             // btnAbuela
             // 

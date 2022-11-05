@@ -9,6 +9,7 @@ namespace Hackaton
 
         private void btnVerif_Click(object sender, EventArgs e)
         {
+            lblResult1.Visible = true;
             string text1 = "", text2 = "";
             text1 = txtScr1.Text.ToUpper();
             text2 = txtScr2.Text.ToUpper();
@@ -93,6 +94,7 @@ namespace Hackaton
 
         private void btnVerif1_Click(object sender, EventArgs e)
         {
+            lblResC.Visible = true;
             string text1 = "", text2 = "",result = "";
             text1 = txtCS1.Text.ToUpper();
             text2 = txtCS2.Text.ToUpper();
@@ -133,6 +135,7 @@ namespace Hackaton
 
         private void btnAbuela_Click(object sender, EventArgs e)
         {
+            lblAbuela.Visible = true;
             int N = 0, n1 = 0, n2 = 0;
 
             
